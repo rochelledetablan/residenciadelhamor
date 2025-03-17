@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Residencia Del Hamor Hotel</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+    .header-bg {
+        background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0d/13/6a/26/residencia-del-hamor.jpg');
+    }
+</style>
+
+</head>
+<body class="bg-gray-100">
+
+    <header class="relative header-bg bg-cover bg-center h-screen flex items-center">
+        <div class="bg-black bg-opacity-50 p-5 w-full">
+            <h1 class="text-5xl font-bold text-white text-center">𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝑅𝑒𝓈𝒾𝒹𝑒𝓃𝒸𝒾𝒶 𝒟𝑒𝓁 𝐻𝒶𝓂𝑜𝓇 𝐻𝑜𝓉𝑒𝓁</h1>
+            <nav class="mt-4">
+                <nav class="mt-4">
+                    <ul class="flex justify-center space-x-4">
+                        <li>
+                            <a href="#about" class="bg-transparent-600 text-white hover:bg-blue-700 transition duration-300 px-4 py-2 rounded">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#rooms" class="bg-transparent-600 text-white hover:bg-blue-700 transition duration-300 px-4 py-2 rounded">Rooms</a>
+                        </li>
+                        <li>
+                            <a href="#booking" class="bg-transparent-600 text-white hover:bg-blue-700 transition duration-300 px-4 py-2 rounded">Book Now</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="bg-transparent-600 text-white hover:bg-blue-700 transition duration-300 px-4 py-2 rounded">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <section id="about" class="p-10">
+        <h2 class="text-4xl font-bold text-center">About Us</h2>
+        <p class="mt-4 text-center">𝖱𝖾𝗌𝗂𝖽𝖾𝗇𝖼𝗂𝖺 𝖣𝖾𝗅 𝖧𝖺𝗆𝗈𝗋 𝖧𝗈𝗍𝖾𝗅 𝗈𝖿𝖿𝖾𝗋𝗌 𝗍𝗁𝖾 𝖻𝖾𝗌𝗍 𝖺𝖼𝖼𝗈𝗆𝗆𝗈𝖽𝖺𝗍𝗂𝗈𝗇 𝗐𝗂𝗍𝗁 𝗌𝗍𝗎𝗇𝗇𝗂𝗇𝗀 𝗏𝗂𝖾𝗐𝗌 𝖺𝗇𝖽 𝗍𝗈𝗉-𝗇𝗈𝗍𝖼𝗁 𝗌𝖾𝗋𝗏𝗂𝖼𝖾𝗌.</p>
+    </section>
+
+    <section id="rooms" class="p-10 bg-white">
+        <h2 class="text-4xl font-bold text-center">Our Accommodations</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 ">
+                <h3 class="text-xl font-semibold">Deluxe Room</h3>
+                <img src="DELUXE ROOM.webp" alt="Deluxe Room" class="rounded-lg mt-2 mb-2">
+                <p>Enjoy a luxurious stay in our deluxe room with all amenities.</p>
+                <p class="text-gray-700">Availability: Available</p>
+                <button class="bg-blue-600 text-white p-2 rounded mt-2 modal-open" data-modal="modal4">View Details</button>
+            </div>
+            
+            <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold">Standard Room</h3>
+                <img src="standard villa.webp" alt="Standard Room" class="rounded-lg mt-2 mb-2">
+                <p>Comfortable and affordable, perfect for budget travelers.</p>
+                <p class="text-gray-700">Availability: Available</p>
+                <button class="bg-blue-600 text-white p-2 rounded mt-2 modal-open" data-modal="modal4">View Details</button>
+            </div>
+            <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold">Family Room</h3>
+                <img src="Panoramic Duplex Villa with Pool.webp" alt="Panoramic Duplex Villa with Pool" class="rounded-lg mt-2 mb-2">
+                <p>Spacious and comfortable, ideal for families with children.</p>
+                <p class="text-gray-700">Availability: Available</p>
+                <button class="bg-blue-600 text-white p-2 rounded mt-2 modal-open" data-modal="modal4">View Details</button>
+            </div>
+            <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold">Suite Room</h3>
+                <img src="suite room.webp" alt="Suite Room" class="rounded-lg mt-2 mb-2">
+                <p>Luxurious suite with a separate living area and stunning views.</p>
+                <p class="text-gray-700">Availability: Available</p>
+                <button class="bg-blue-600 text-white p-2 rounded mt-2 modal-open" data-modal="modal4">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="p-10">
+        <h2 class="text-4xl font-bold text-center">Amenities & Activities</h2>
+        <div id="amenitiesCarousel" class="carousel slide mt-6" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 h-[500px] flex flex-col justify-between">
+                        <h3 class="text-xl font-semibold">Spa</h3>
+                        <img src="Spa.webp" alt="Spa" class="rounded-lg mt-2 mb-2 w-full h-full object-cover">
+                        <p>Relax and rejuvenate with our full-service spa offering massages, facials, and wellness treatments.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 h-[500px] flex flex-col justify-between">
+                        <h3 class="text-xl font-semibold">Pool</h3>
+                        <img src="pool.webp" alt="Pool" class="rounded-lg mt-2 mb-2 w-full h-full object-cover">
+                        <p>Enjoy our outdoor pool with stunning views, perfect for a refreshing dip or lounging in the sun.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 h-[500px] flex flex-col justify-between">
+                        <h3 class="text-xl font-semibold">Restaurant</h3>
+                        <img src="restaurant.webp" alt="Restaurant" class="rounded-lg mt-2 mb-2 w-full h-full object-cover">
+                        <p>Indulge in gourmet dining with a variety of local and international cuisines prepared by our expert chefs.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 h-[500px] flex flex-col justify-between">
+                        <h3 class="text-xl font-semibold">Adventure Tours</h3>
+                        <img src="Adventure Tour.webp" alt="Adventure Tours" class="rounded-lg mt-2 mb-2 w-full h-full object-cover">
+                        <p>Our resort offers the perfect blend of excitement and tranquility. Hop on an ATV for an off-road excursion, or enjoy a relaxing tour of the grounds in our golf carts. Create lasting memories against the backdrop of stunning natural landscapes and our beautiful thatched-roof clubhouse.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#amenitiesCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#amenitiesCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+    <section id="amenities" class="p-10">
+        <h2 class="text-4xl font-bold text-center">Gallery</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+           
+            <div class="border p-5 shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="cozy villa.jpeg" alt="Spa" class="rounded-lg mt-2 mb-2 w-80 h-56 object-cover">
+                <p>Relax and rejuvenate with our serene nighttime view of a cozy villa with an illuminated interior and a private pool reflecting the light from the villa and the surrounding area.</p>
+            </div>
+            
+            <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="image 2.jpeg" alt="Pool" class="rounded-lg mt-2 mb-2 w-80 h-56 object-cover">
+                <p>Enjoy our outdoor pool with stunning views, perfect for a refreshing dip or lounging in the sun and ideal for relaxation and leisure activities.</p>
+            </div>
+            
+            <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="image 3.webp" alt="Restaurant" class="rounded-lg mt-2 mb-2 w-80 h-56 object-cover">
+                <p>Visitors can enjoy moments of tranquility while sitting on the benches, soaking in the natural beauty and fresh air. Ideal for unwinding after a day of exploring or engaging in activities like yoga, meditation, or reading amidst nature.</p>
+            </div>
+            
+            <div class="border p-5 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="image 4.webp" alt="Adventure Tours" class="rounded-lg mt-2 mb-2 w-80 h-56 object-cover">
+                <p>Explore the beauty of the surrounding area with our guided adventure tours, including hiking, biking, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="p-10">
+        <h2 class="text-4xl font-bold text-center">Book Your Stay</h2>
+        <form id="booking-form" class="mt-6 max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+            <label for="name" class="block mb-2">Name:</label>
+            <input type="text" id="name" name="name" required class="border p-2 w-full mb-4 rounded w-full shadow hover:shadow-lg transition-shadow duration-300">
+
+            <label for="checkin" class="block mb-2">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required class="border p-2 w-full mb-4 rounded w-full shadow hover:shadow-lg transition-shadow duration-300">
+
+            <label for="checkout" class="block mb-2">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required class="border p-2 w-full mb-4 rounded w-full shadow hover:shadow-lg transition-shadow duration-300">
+
+            <label for="room-type" class="block mb-2">Room Type:</label>
+            <select id="room-type" name="room-type" required class="border p-2 w-full mb-4 rounded w-full shadow hover:shadow-lg transition-shadow duration-300">
+                <option value="deluxe">Deluxe Room</option>
+                <option value="standard">Standard Room</option>
+                <option value="standard">Family Room</option>
+                <option value="standard">Suite Room</option>
+            </select>
+
+            <button type="submit" class="bg-blue-600 text-white p-2 rounded w-full shadow hover:shadow-lg transition-shadow duration-300">Book Now</button>
+        </form>
+    </section>
+    
+
+</body>
+</html>
+    <header class="bg-white-700 text-black p-10">
+    <section id="contact" class="p-10">
+        <h2 class="text-4xl font-bold text-center">Contact Us</h2>
+        <form id="contact-form" class="mt-6 max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+            <label for="name" class="block mb-2">Name:</label>
+            <input type="text" id="name" name="name" required class="border p-2 w-full mb-4 rounded w-full shadow hover:shadow-lg transition-shadow duration-300">
+
+            <label for="email" class="block mb-2">Email:</label>
+            <input type="email" id="email" name="email" required class="border p-2 w-full mb-4 rounded w-full shadow hover:shadow-lg transition-shadow duration-300">
+
+            <label for="message" class="block mb-2">Message:</label>
+            <textarea id="message" name="message" required class="border p-2 w-full mb-4 rounded w-full shadow hover:shadow-lg transition-shadow duration-300" rows="4"></textarea>
+
+            <button type="submit" class="bg-blue-600 text-white p-2 rounded w-full shadow hover:shadow-lg transition-shadow duration-300">Send Message</button>
+        </form>
+    </section>
+
+    <section class="p-10 bg-white">
+        <h2 class="text-2xl font-bold text-center">Our Location</h2>
+        <div class="mt-6">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124497.53896442974!2d123.97559223602683!3d12.807819087492677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a0c3dbd04100cd%3A0x49e1dceb30915b6f!2sResidencia%20Del%20Hamor!5e0!3m2!1sen!2sph!4v1741944450213!5m2!1sen!2sph" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <footer class="bg-white-600 text-black p-10 mt-10">
+        <h2 class="text-2xl font-bold text-center">Thank you for reaching out!</h2>
+    </footer>
+
+</body>
+</html>
